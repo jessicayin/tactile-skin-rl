@@ -90,7 +90,7 @@
           <div class="is-size-5 publication-authors">
             <span class = "author-block">
 
-           
+
 
             <span class="author-block">
               <a href="https://jessicayin.com">Jessica Yin</a><sup>1,2</sup>,</span>
@@ -108,8 +108,8 @@
             </span>
             <span class="author-block">
               <a href="http://www.tesshellebrekers.com">Tess Hellebrekers</a><sup>1</sup>
-            </span> 
-         </div> 
+            </span>
+         </div>
            </span>
 
 <!--           <div class="is-size-5 publication-authors">
@@ -150,27 +150,16 @@
                   <span>arXiv</span>
                 </a>
               </span>
-            </div>
-              <!-- Video Link. -->
-             <!--  <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
               <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href=""
+              <span class="link-block">
+                <a href="https://github.com/jessicayin/tactile_skin_model"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code Coming Soon</span>
+                  <span>Code</span>
                   </a>
-              </span> -->
+              </span>
               <!-- Dataset Link. -->
               <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
@@ -180,9 +169,9 @@
                   </span>
                   <span>Data</span>
                   </a> -->
-           </div> 
+           </div>
 
-          </div> 
+          </div>
         </div>
       </div>
     </div>
@@ -248,7 +237,7 @@
                   <!-- frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
                   <video id="teaser"controls autoplay muted playsinline width="100%">
                     <source src="./videos/taxel_model_website.mp4"
-                            type="video/mp4">                  
+                            type="video/mp4">
                   </video>
 
         </div>
@@ -257,39 +246,39 @@
                   <!-- frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
                   <video id="teaser"controls autoplay muted playsinline width="100%">
                     <source src="./videos/tactile_skin_sim_clip.mp4"
-                            type="video/mp4">                  
+                            type="video/mp4">
                   </video>
         </div>
       </div>
     </div>
 
     <!--/ Paper video. -->
-  
+
 
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3">Real-World Experiments</h2>
-     
+
         <div class="content has-text-justified">
         <p>
-        To demonstrate the effectiveness of our simulated tactile skin model, we perform sim-to-real experiments on the in-hand translation task. 
-        This task requires rich, controlled sliding contact on the palm, so we hypothesize that palm tactile feedback can be particularly useful. 
+        To demonstrate the effectiveness of our simulated tactile skin model, we perform sim-to-real experiments on the in-hand translation task.
+        This task requires rich, controlled sliding contact on the palm, so we hypothesize that palm tactile feedback can be particularly useful.
         </p>
         <p>
-        We first test in-domain policy performance on the canonical cylinder object, to compare Proprio-Only and a 3-axis tactile policy. 
-        Then, with the same cylinder, we test policy adaptation to OOD hand tilt angles <i>against</i> gravity. 
-        These tilt angles passively bias object motion opposing the desired translation direction, thus requiring more force from fingers and gait adaptation to complete the task. 
-        This experiment isolates the effect of tilting the hand. 
+        We first test in-domain policy performance on the canonical cylinder object, to compare Proprio-Only and a 3-axis tactile policy.
+        Then, with the same cylinder, we test policy adaptation to OOD hand tilt angles <i>against</i> gravity.
+        These tilt angles passively bias object motion opposing the desired translation direction, thus requiring more force from fingers and gait adaptation to complete the task.
+        This experiment isolates the effect of tilting the hand.
         Finally, we test policy adaptation to OOD objects <i>and</i> hand tilt angles. We are interested in the limits of policy adaptation, so experiments focus on the maximum angles at which policies are still capable of completing the task.
       </p>
       <p>
-        Notably, we conduct <i>all</i> of our evaluations in the real-world for 190 total rollouts. 
+        Notably, we conduct <i>all</i> of our evaluations in the real-world for 190 total rollouts.
       </p>
         </div>
         <div class="publication-video">
                 <video id="teaser"controls autoplay muted playsinline width="100%">
                   <source src="./videos/experiments_website.mp4"
-                          type="video/mp4">                  
+                          type="video/mp4">
                 </video>
         </div>
     </div>
@@ -303,34 +292,34 @@
           </div>
         <div class="content has-text-justified">
           <p>
-            A. Real-world cylinder rollouts with S3-Axis and Proprio-Only. This shows superior S3-Axis policy performance compared to Proprio-Only for both ID and OOD conditions. Error bars indicate standard deviation. 
+            A. Real-world cylinder rollouts with S3-Axis and Proprio-Only. This shows superior S3-Axis policy performance compared to Proprio-Only for both ID and OOD conditions. Error bars indicate standard deviation.
           </p>
           <p>
-            B. Three-axis tactile sensing policies demonstrate the best adaptation to OOD objects and unseen hand orientations. 
-            S3-axis enables <b>93% average success rate</b> and <b>+51% increase</b> in distance over Proprio-Only. U3-axis enables <b>+60% increase</b> in velocity over Proprio-Only. 
+            B. Three-axis tactile sensing policies demonstrate the best adaptation to OOD objects and unseen hand orientations.
+            S3-axis enables <b>93% average success rate</b> and <b>+51% increase</b> in distance over Proprio-Only. U3-axis enables <b>+60% increase</b> in velocity over Proprio-Only.
             These metrics are averaged over all real-world OOD experiments (30 rollouts/policy).
           </p>
         </div>
-        
+
     </div>
     </div>
 
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3">Tactile Policies Explore More Finger Gaits</h2>
-     
+
         <div class="content has-text-justified">
         <p>
           We compare the standard deviation of intersections through Poincare sections of the phase portraits for each finger motor and find that on average, all tactile policies explore more joint states relative to Proprio Only, particularly for the hammer and water bottle experiments.
         </p>
         <p>
-          Greater joint state exploration is potentially a factor in task success and an indicator of gait adaptation; however, other variables such as gait cycle timing and finger coordination are also important to consider. 
+          Greater joint state exploration is potentially a factor in task success and an indicator of gait adaptation; however, other variables such as gait cycle timing and finger coordination are also important to consider.
       </p>
         </div>
         <div class="publication-video">
                 <video id="teaser"controls autoplay muted playsinline width="100%">
                   <source src="./videos/gaits_website.mp4"
-                          type="video/mp4">                  
+                          type="video/mp4">
                 </video>
         </div>
     </div>
@@ -338,7 +327,7 @@
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3">Our Tactile Policies Generalize</h2>
-     
+
         <div class="content has-text-justified">
         <p>
           We demonstrate the generalization of our 3-axis tactile policies to diverse objects, outside of the 4 real world objects in our test set.
@@ -350,7 +339,7 @@
         <div class="publication-video">
                 <video id="teaser"controls autoplay muted playsinline width="100%">
                   <source src="./videos/items_website.mp4"
-                          type="video/mp4">                  
+                          type="video/mp4">
                 </video>
         </div>
     </div>
@@ -359,13 +348,13 @@
     <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3">Acknowledgements</h2>
-     
+
         <div class="content has-text-justified">
         <p>
-          This work was conducted while Jessica Yin was an intern and Haozhi Qi was a research fellow with Meta FAIR. In their academic roles at UC Berkeley, Haozhi Qi and Jitendra Malik are supported in part by ONR MURI N0001421-1-2801. In her academic role at the University of Pennsylvania, Jessica Yin was supported by the NSF Graduate Research Fellowship under Grant No. 202095381. 
+          This work was conducted while Jessica Yin was an intern and Haozhi Qi was a research fellow with Meta FAIR. In their academic roles at UC Berkeley, Haozhi Qi and Jitendra Malik are supported in part by ONR MURI N0001421-1-2801. In her academic role at the University of Pennsylvania, Jessica Yin was supported by the NSF Graduate Research Fellowship under Grant No. 202095381.
         </p>
         <p>
-          We thank Mustafa Mukadam, Mike Lambeta, Tingfan Wu, Luis Pineda, Taosha Fan, Patrick Lancaster, Mrinal Kalakrishnan, Raunaq Bhirangi, Carolina Higuera, Akash Sharma, Suddhu Suresh, and William Yang for helpful discussions and feedback throughout this work. We thank Dr. Nadia Figueroa, Ho Jin Choi, Tianyu Li, and Harshil Parekh for access and assistance with the Franka robot arm and Optitrack system for hardware experiments. 
+          We thank Mustafa Mukadam, Mike Lambeta, Tingfan Wu, Luis Pineda, Taosha Fan, Patrick Lancaster, Mrinal Kalakrishnan, Raunaq Bhirangi, Carolina Higuera, Akash Sharma, Suddhu Suresh, and William Yang for helpful discussions and feedback throughout this work. We thank Dr. Nadia Figueroa, Ho Jin Choi, Tianyu Li, and Harshil Parekh for access and assistance with the Franka robot arm and Optitrack system for hardware experiments.
       </p>
         </div>
 
@@ -378,13 +367,13 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{yin2024learninginhandtranslation,
-      title={Learning In-Hand Translation Using Tactile Skin With Shear and Normal Force Sensing}, 
+      title={Learning In-Hand Translation Using Tactile Skin With Shear and Normal Force Sensing},
       author={Jessica Yin and Haozhi Qi and Jitendra Malik and James Pikul and Mark Yim and Tess Hellebrekers},
       year={2024},
       eprint={2407.07885},
       archivePrefix={arXiv},
       primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2407.07885}, 
+      url={https://arxiv.org/abs/2407.07885},
 }</code></pre>
   </div>
 </section>
